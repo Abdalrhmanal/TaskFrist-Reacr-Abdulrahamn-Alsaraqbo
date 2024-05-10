@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home/Home';
+import Hedar from './layout/Headar';
+import Footer from './layout/Footer';
+import AddPage from './Components/Post/AddPage';
+import PostDetailsPage from './Components/Post/PostDetailsPage';
+import UpdatePage from './Components/Post/UpdatePage';
+import DeletePage from './Components/Post/DeletePage.jsx';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Hedar />
+      <Routes>
+        // git All Posts
+        <Route path="/" element={<>
+          <Home />
+        </>} />
+        // create new post
+        <Route path="/addpost" element={<>
+          <AddPage />
+        </>} />
+        // get post details by id
+        <Route path="/detailspost/:id" element={<>
+          <PostDetailsPage />
+        </>} />
+        // update post by id
+        <Route path="/updatepost/:id" element={<>
+          <UpdatePage />
+        </>} />
+        // delete post by id
+        <Route path="/deletepost/:id" element={<>
+          <DeletePage />
+        </>} />
+
+      </Routes>
+      {/* footer */}
+      <Footer />
+    </Router>
   );
 }
 
