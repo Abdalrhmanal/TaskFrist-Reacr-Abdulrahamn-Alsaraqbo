@@ -36,7 +36,7 @@ function AddPage() {
 
   return (
     <>
-      <h1 className="text-center" style={{ color: 'darkgreen', fontSize: '30px' }}>Add New Post</h1>
+      <h1 className="text-center" style={{ color: 'darkgreen', marginTop: '100px' }}>Add New Post</h1>
       <div className="container" style={{ width: '80%', margin: 'auto' ,marginTop: '100px'}}>
         <form onSubmit={handleSubmit} className="container mt-5">
           <div className="mb-3">

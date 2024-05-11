@@ -14,7 +14,7 @@ function Hedar() {
           <nav id="navbar" className="navbar">
             <ul>
               <li><Link to="/" classNameName="active">Home</Link></li>
-              <li><a href="#">About</a></li>
+              <li><Link to="/">About</Link></li>
               <li><Link to="/addpost">Add Post</Link></li>
               <li className="dropdown"><a href="#"><span>Config</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>

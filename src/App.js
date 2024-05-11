@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home/Home';
 import Hedar from './layout/Headar';
 import Footer from './layout/Footer';
-import AddPage from './Components/Post/AddPage';
-import PostDetailsPage from './Components/Post/PostDetailsPage';
-import UpdatePage from './Components/Post/UpdatePage';
-import DeletePage from './Components/Post/DeletePage.jsx';
+import AddPage from './Components/Post/CreatePost.jsx';
+import PostDetailsPage from './Components/Post/DetailsPost.jsx';
+import UpdatePage from './Components/Post/UpdatePost.jsx';
+import DeletePage from './Components/Post/DeletePost.jsx';
 
 
 function App() {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 function UpdatePage() {
-  const { id } = useParams(); // استخدام useParams للحصول على المعرف
+  const { id } = useParams(); 
   const navigate = useNavigate(); // استخدام useNavigate للتنقل
   const [post, setPost] = useState({ title: '', body: '' });
 
@@ -40,7 +40,7 @@ function UpdatePage() {
     <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
-          <h1>Update Post</h1>
+          <h1 className="text-center" style={{ color: 'darkgreen', marginTop: '100px' }}>Update Post</h1>
           <form onSubmit={handleUpdate}>
             <div className="mb-3">
               <label htmlFor="title" className="form-label">Title:</label>
