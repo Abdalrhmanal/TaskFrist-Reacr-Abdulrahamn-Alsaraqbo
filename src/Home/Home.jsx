@@ -10,9 +10,9 @@ function Home() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6 text-center">
-              <h2>I'm <span>Jenny Wilson</span> a Professional Photographer from New York City</h2>
-              <p>Blanditiis praesentium aliquam illum tempore incidunt debitis dolorem magni est deserunt sed qui libero. Qui voluptas amet.</p>
-              <a href="contact.html" className="btn-get-started">Available for hire</a>
+              <h2>I'm <span>Abdulrahman Sraqbi</span> From beautiful green Syria</h2>
+              <p>This is the first task in React, which is a web application that is responsive to all screens in order to view, add, modify, and delete posts.</p>
+              <a href="#" className="btn-get-started">Check out the app</a>
             </div>
           </div>
         </div>

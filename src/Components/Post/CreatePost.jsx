@@ -6,8 +6,9 @@ function AddPage() {
   const [body, setBody] = useState('');
   const navigate = useNavigate(); // استخدام useNavigate
 
+  // دالة handleSubmit تتعامل مع إرسال النموذج
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // منع السلوك الافتراضي لإعادة تحميل الصفحة
     const postData = {
       title,
       body
@@ -28,6 +29,7 @@ function AddPage() {
         setBody('');
         navigate(`/detailspost/${data.id}`); // التنقل إلى صفحة تفاصيل المنشور
       })
+      // تحديد دالة catch للتعامل مع أي خطأ يظهر أثناء عملية اضافة المنشور
       .catch(error => {
         console.error('Error adding post:', error);
         alert('Failed to add post');
