@@ -13,7 +13,7 @@ function Hedar() {
 
           <nav id="navbar" className="navbar">
             <ul>
-              <li><Link to="/" classNameName="active">Home</Link></li>
+              <li><Link to="/" className="active">Home</Link></li>
               <li><Link to="/">About</Link></li>
               <li><Link to="/addpost">Add Post</Link></li>
               <li className="dropdown"><a href="#"><span>Config</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -33,12 +33,12 @@ function Hedar() {
             <a href="https://www.facebook.com/profile.php?id=100060889084046&mibextid=ZbWKwL" className="facebook"><i className="bi bi-facebook"></i></a>
             <a href="https://www.instagrsm.com" className="instagram"><i className="bi bi-instagram"></i></a>
             <a href="#https://www.linkedin.com/in/abdulrahman-al-saraqbi-7b91b5240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="linkedin"><i className="bi bi-linkedin"></i></a>
-        </div>
-        <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+          </div>
 
-      </div>
-    </header >
+          <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+          <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+      </header >
     </>
   );
 };
