@@ -7,7 +7,7 @@ import AddPage from './Components/Post/CreatePost.jsx';
 import PostDetailsPage from './Components/Post/DetailsPost.jsx';
 import UpdatePage from './Components/Post/UpdatePost.jsx';
 import DeletePage from './Components/Post/DeletePost.jsx';
-
+import Contact from './layout/Contact';
 
 function App() {
   return (
@@ -35,6 +35,9 @@ function App() {
           <DeletePage />
         </>} />
 
+        <Route path="/contact" element={<>
+          <Contact />
+        </>} />
       </Routes>
       {/* footer */}
       <Footer />

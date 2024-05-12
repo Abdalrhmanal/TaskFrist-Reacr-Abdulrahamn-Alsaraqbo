@@ -16,7 +16,7 @@ function PostDetailsPage() {
 
   return (
     <>
-      <h1 className="text-center" style={{ color: 'darkgreen', marginTop: '100px' }}>Post Details</h1>
+      <h1 className="text-center" style={{ color: 'rgb(39, 167, 118)', marginTop: '100px' }}>Post Details user Abdulrahman</h1>
 
       <section id="gallery-single" className="gallery-single">
         <div className="container">
@@ -39,10 +39,10 @@ function PostDetailsPage() {
                       </div>
                       <div className="col-lg-6" style={{ marginTop: '20px' }}>
                         <Link to={`/updatepost/${post.id}`}>
-                          <button className="btn btn-primary">Update Post</button>
-                        </Link> 
+                          <button className="btn btn-primary">Update Post <i className="bi bi-pen"></i></button>
+                        </Link>
                         <Link to={`/deletepost/${post.id}`}>
-                          <button className="btn btn-danger">Delete Post</button>
+                          <button className="btn btn-danger">Delete Post <i className="bi bi-trash"></i></button>
                         </Link>
                       </div>
 
@@ -54,8 +54,24 @@ function PostDetailsPage() {
                 )}
               </div>
             </div>
+
           </div>
+          <hr />
+          <div className="row justify-content-between gy-4 mt-4">
+            <div className="col-lg-12 text-center" style={{color: 'grey'}}>
+              <h3>Comments</h3>
+              <p>No comments yet</p>
+            </div>
+            <div className="col-lg-12 text-center" style={{color: 'grey'}}>
+              <form action="" className="d-flex justify-content-center">
+                <input type="text" className="form-control" style={{ width: '700px' }} placeholder="Add a comment" />
+                <button type="submit" className="btn btn-success ms-2"><i className="bi bi-send"></i></button>
+              </form>
+            </div>
+          </div>
+
         </div>
+
       </section>
     </>
   );
