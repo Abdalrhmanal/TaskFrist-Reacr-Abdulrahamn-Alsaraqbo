@@ -65,11 +65,11 @@ function PostDetailsPage() {
           </div>
           <hr />
           <div id='comments' className="row justify-content-between gy-4 mt-4">
-            <div className="col-lg-12 text-center" style={{ color: 'grey' }}>
+            <div className="col-lg-12 text-center" style={{ color: 'rgb(39, 167, 118)' }}>
               <h3>Comments</h3>
               <p>No comments yet</p>
             </div>
-            <div className="col-lg-12 text-center" style={{ color: 'grey' }}>
+            <div className="col-lg-12 text-center" style={{ color: 'rgb(39, 167, 118)' }}>
               <form action="" className="d-flex justify-content-center">
                 <input type="text" className="form-control" style={{ width: '700px' }} placeholder="Add a comment" />
                 <button type="submit" className="btn btn-success ms-2"><i className="bi bi-send"></i></button>

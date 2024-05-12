@@ -38,7 +38,8 @@ function AddPage() {
 
   return (
     <>
-      <h1 className="text-center" style={{ color: 'darkgreen', marginTop: '100px' }}>Add New Post</h1>
+      <h1 className="text-center" style={{ color: 'rgb(39, 167, 118)', marginTop: '100px' }}>Create your new post</h1>
+      <h4 className="text-center" style={{ color: 'gray' }}>Share your bright ideas with others, they may be impressed and support you</h4>
       <div className="container" style={{ width: '80%', margin: 'auto' ,marginTop: '100px'}}>
         <form onSubmit={handleSubmit} className="container mt-5">
           <div className="mb-3">
@@ -64,7 +65,7 @@ function AddPage() {
               style={{ borderColor: 'darkgreen' }}
             />
           </div>
-          <button type="submit" className="btn btn-success" style={{ backgroundColor: 'darkgreen' }}>Add Post</button>
+          <button type="submit" className="btn btn-success" style={{ backgroundColor: 'darkgreen' }}>Share <i className="bi bi-share"></i></button>
         </form>
       </div>
     </>
